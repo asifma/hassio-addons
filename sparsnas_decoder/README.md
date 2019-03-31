@@ -10,10 +10,10 @@ If you want to get into the bits and bytes of the system please see:
 https://github.com/kodarn/Sparsnas
 
 This is a decoder for IKEA SPARSNÄS 
-(Hass.io Add-On.)
+(Hass.io Add-On)
 ===================================
 
-It uses RTL-SDR running on a Raspberry Pi to demodulate the FSK signal, and decodes the packet.
+It uses RTL-SDR running on a Raspberry Pi installed with hass.io to demodulate the FSK signal, and decodes the packet. The Output is sent in JSON format to a MQTT broker.
 
 The packet data is encrypted using your sender's ID. The sender ID is the last 6 digits of the serial number located under the battery.
 
