@@ -1,0 +1,28 @@
+{
+  "name": "Sparsnäs Decoder",
+  "version": "0.1",
+  "slug": "sparsnas_decoder",
+  "description": "Decoder for IKEA Sparsnäs with output in JSON format to a MQTT broker",
+  "url": "https://github.com/asifma/hassio-addons/tree/master/sparsnas_decoder",
+  "startup": "application",
+  "boot": "auto",
+  "map": ["config:rw"],
+  "host_network": true,
+  "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
+  "options":
+  {
+    "SENSORS": "123456 1000",
+    "MQTT_HOST": "192.168.x.x",
+    "MQTT_PORT": 1883,
+    "MQTT_USERNAME": "user",
+    "MQTT_PASSWORD": "pass"
+  },
+  "schema":
+  {
+    "SENSORS": "str",
+    "MQTT_HOST": "str",
+    "MQTT_PORT": "int",
+    "MQTT_USERNAME": "str",
+    "MQTT_PASSWORD": "str"
+   }
+}
