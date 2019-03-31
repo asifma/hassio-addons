@@ -32,7 +32,9 @@ You can also pipe your MQTT data via node-red to InfluxDB for diplaying in for e
 The installation:
 -------------
 Add this repository to hass.io - [click here for guide](https://www.home-assistant.io/hassio/installing_third_party_addons/).
+
 Use the following url: [https://github.com/asifma/hassio-addons](https://github.com/asifma/hassio-addons)
+
 Make sure to edit the default config before starting the Add-On
 
 ```sh
