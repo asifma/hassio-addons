@@ -3,19 +3,18 @@
 set -o pipefail
 
 #Associatve array
-#typeset -A SENSORS
+typeset -A SENSORS
 #SENSORS=(id_1 pulses_1 id_2 pulses_2)
-
-typeset -a SENSORS
 
 # Define an environment variable from config.json
 CONFIG_PATH=/data/options.json
 SENSORS=($(jq --raw-output ".SENSORS" $CONFIG_PATH))
+SENSORSX=($(jq --raw-output ".SENSORS" $CONFIG_PATH))
 MQTT_HOST=$(jq --raw-output '.MQTT_HOST' $CONFIG_PATH)
 MQTT_PORT=$(jq --raw-output '.MQTT_PORT' $CONFIG_PATH)
 MQTT_USERNAME=$(jq --raw-output '.MQTT_USERNAME' $CONFIG_PATH)
 MQTT_PASSWORD=$(jq --raw-output '.MQTT_PASSWORD' $CONFIG_PATH)
-echo "SENSORS =" ${SENSORS[*]}
+echo "SENSORS =" $SENSORSX
 echo "MQTT HOST =" $MQTT_HOST
 echo "MQTT PORT =" $MQTT_PORT
 echo "MQTT USERNAME =" $MQTT_USERNAME
