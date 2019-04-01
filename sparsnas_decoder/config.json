@@ -1,6 +1,6 @@
 {
   "name": "Sparsnäs Decoder",
-  "version": "0.1",
+  "version": "0.2",
   "slug": "sparsnas_decoder",
   "description": "Decoder for IKEA Sparsnäs with output in JSON format to a MQTT broker",
   "url": "https://github.com/asifma/hassio-addons/tree/master/sparsnas_decoder",
