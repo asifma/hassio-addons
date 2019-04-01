@@ -11,8 +11,12 @@ FROM alpine:edge as BUILD_ENV
 
 COPY ./sparsnas_decode.cpp /build/
 
-RUN apk add --no-cache g++ mosquitto-dev && \
-    g++ -o /build/sparsnas_decode -O2 -Wall /build/sparsnas_decode.cpp -lmosquitto
+RUN \
+  apk add --no-cache \
+    g++ \
+    mosquitto-dev \
+  \
+  && g++ -o /build/sparsnas_decode -O2 -Wall /build/sparsnas_decode.cpp -lmosquitto
 
 FROM alpine:edge
 
