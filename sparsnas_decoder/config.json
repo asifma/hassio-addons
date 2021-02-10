@@ -10,6 +10,7 @@
   "map": ["config:rw"],
   "host_network": true,
   "devices": ["/dev/bus/usb:/dev/bus/usb:rwm"],
+  "usb": true,
   "options":
   {
     "SENSORS": "123456 1000",
