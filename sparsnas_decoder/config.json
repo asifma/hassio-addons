@@ -1,6 +1,6 @@
 {
   "name": "Sparsnäs Decoder",
-  "version": "0.2",
+  "version": "0.3",
   "slug": "sparsnas_decoder",
   "description": "Decoder for IKEA Sparsnäs with output in JSON format to a MQTT broker",
   "arch": ["armhf", "armv7", "aarch64", "amd64", "i386"],
